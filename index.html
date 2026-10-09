@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viva Cena - Ingressos para Cinema, Música e Teatro</title>
-    <!-- Vinculação do arquivo de estilos externo -->
+    <title>Viva Cena - Início</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- CABEÇALHO DA PÁGINA -->
     <header class="header">
         <div class="container header-container">
             <a href="index.html" class="logo">
-                <img src="C:\Users\26175450\viva-cena-1\ChatGPT Image 25 de set. de 2026, 17_05_41.png" style="width: 85px; height: auto;float: left;">
                 <span class="logo-viva">Viva</span><span class="logo-cena">Cena</span><span class="logo-dot">.</span>
             </a>
-            
-
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="cinema.html">Cinema</a></li>
                     <li><a href="musica.html">Música</a></li>
                     <li><a href="teatro.html">Teatro</a></li>
@@ -31,118 +23,47 @@
         </div>
     </header>
 
-    <!-- BANNER PRINCIPAL (HERO) -->
     <section class="hero">
         <div class="container hero-container">
             <div class="hero-content">
-                <span class="hero-tag">Sua plataforma de entretenimento</span>
                 <h1>Viva a emoção do Cinema, Música e Teatro!</h1>
-                <p>Encontre os melhores eventos da sua região e garanta seu ingresso de forma simples, rápida e
-                    organizada.</p>
-                <div class="hero-buttons">
-                    <a href="#categorias" class="btn btn-primary">Ver Categorias</a>
-                    <a href="#destaques" class="btn btn-outline">Eventos em Destaque</a>
-                </div>
+                <p>A sua plataforma definitiva para encontrar e comprar ingressos de eventos.</p>
+                <a href="#categorias" class="btn btn-primary">Ver Categorias</a>
             </div>
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80"
-                    alt="Público aproveitando um evento cultural">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Entretenimento">
             </div>
         </div>
     </section>
 
-    <!-- CATEGORIAS PRINCIPAIS -->
-    <section id="categorias" class="categories">
-        <div class="container">
-            <div class="section-title">
-                <h2>Explore por Categoria</h2>
-                <p>Escolha o tipo de espetáculo que você quer vivenciar hoje</p>
+    <section id="categorias" class="container">
+        <div class="category-grid">
+            <div class="category-card category-cinema">
+                <h3>Cinema</h3>
+                <p>Filmes, estreias e sessões especiais.</p>
+                <a href="cinema.html">Acessar Cinema &rarr;</a>
             </div>
-
-            <div class="category-grid">
-                <!-- Categoria Cinema -->
-                <div class="category-card category-cinema">
-                    <div class="category-img">
-                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80"
-                            alt="Sala de Cinema">
-                    </div>
-                    <div class="category-content">
-                        <span class="badge badge-yellow">Sétima Arte</span>
-                        <h3>Cinema</h3>
-                        <p>Lançamentos, sessões especiais e os maiores sucessos das telonas.</p>
-                        <a href="cinema.html" class="btn-link">Acessar Cinema &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Categoria Música -->
-                <div class="category-card category-musica">
-                    <div class="category-img">
-                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80"
-                            alt="Show de Música ao Vivo">
-                    </div>
-                    <div class="category-content">
-                        <span class="badge badge-blue">Ao Vivo</span>
-                        <h3>Música</h3>
-                        <p>Shows, festivais e apresentações das suas bandas e artistas favoritos.</p>
-                        <a href="musica.html" class="btn-link">Acessar Música &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Categoria Teatro -->
-                <div class="category-card category-teatro">
-                    <div class="category-img">
-                        <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=600&q=80"
-                            alt="Palco de Teatro">
-                    </div>
-                    <div class="category-content">
-                        <span class="badge badge-red">Espetáculos</span>
-                        <h3>Teatro</h3>
-                        <p>Peças dramáticas, comédias, musicais e apresentações de dança.</p>
-                        <a href="teatro.html" class="btn-link">Acessar Teatro &rarr;</a>
-                    </div>
-                </div>
+            <div class="category-card category-musica">
+                <h3>Música</h3>
+                <p>Shows, festivais e apresentações.</p>
+                <a href="musica.html">Acessar Música &rarr;</a>
+            </div>
+            <div class="category-card category-teatro">
+                <h3>Teatro</h3>
+                <p>Peças dramáticas e comédias.</p>
+                <a href="teatro.html">Acessar Teatro &rarr;</a>
             </div>
         </div>
     </section>
 
-    <!-- EVENTOS EM DESTAQUE -->
-    <section id="destaques" class="featured">
-        <div class="container">
-            <div class="section-title">
-                <h2>Eventos em Destaque</h2>
-                <p>Confira as atrações mais aguardadas do momento</p>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <span class="logo"><span class="logo-viva">Viva</span>Cena.</span>
+                <p>Projeto acadêmico SENAI - 2026.</p>
             </div>
-
-            <div class="events-grid">
-                <!-- Evento 1 -->
-                <article class="event-card">
-                    <div class="event-img">
-                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=500&q=80"
-                            alt="Festival de Jazz">
-                        <span class="event-tag badge-blue">Música</span>
-                    </div>
-                    <div class="event-info">
-                        <p class="event-date">15 de Novembro &bull; 19:30</p>
-                        <h3 class="event-title">Festival Viva Jazz & Blues</h3>
-                        <p class="event-location">Parque Central &bull; São Paulo/SP</p>
-                        <div class="event-footer">
-                            <span class="event-price">A partir de R$ 60,00</span>
-                            <a href="musica.html" class="btn btn-small btn-primary">Ver Ingressos</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Evento 2 -->
-                <article class="event-card">
-                    <div class="event-img">
-                        <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=500&q=80"
-                            alt="Peça de Teatro Clássica">
-                        <span class="event-tag badge-red">Teatro</span>
-                    </div>
-                    <div class="event-info">
-                        <p class="event-date">20 a 22 de Novembro &bull; 20:00</p>
-                        <h3 class="event-title">O Fantasma da Ópera</h3>
-                        <p class="event-location">Teatro Municipal &bull; São Paulo/SP</p>
-                        <div class="event-footer">
-                            <span class="event-price">A partir
-                                oi, porra
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Viva Cena.</p></div>
+    </footer>
+</body>
+</html>
