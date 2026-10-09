@@ -1,0 +1,500 @@
+/* ==========================================================================
+PROJETO VIVA CENA - ESTILOS PRINCIPAIS (style.css)
+Cores extraídas da logo: Azul (#0055FF), Amarelo (#FFB800) e Vermelho (#FF2D55)
+========================================================================== */
+
+/* --- 1. RESET E VARIÁVEIS DE COR --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores principais da logo */
+    --primary-blue: #0055ff;
+    --primary-blue-hover: #0040c7;
+    --accent-yellow: #ffb800;
+    --accent-red: #ff2d55;
+
+    /* Cores neutras de fundo e texto */
+    --bg-light: #f8fafc;
+    --bg-white: #ffffff;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+
+    /* Fontes e cantos arredondados */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --radius: 8px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- 2. LAYOUT E CONTAINER --- */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- 3. CABEÇALHO DA PÁGINA --- */
+.header {
+    background-color: var(--bg-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo-viva {
+    color: var(--text-dark);
+}
+
+.logo-cena {
+    color: var(--primary-blue);
+}
+
+.logo-dot {
+    color: var(--accent-red);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-list a {
+    font-weight: 600;
+    color: var(--text-dark);
+    padding: 0.5rem 0.8rem;
+    border-radius: var(--radius);
+    transition: all 0.2s ease;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    color: var(--primary-blue);
+    background-color: #f0f5ff;
+}
+
+/* --- 4. SEÇÃO HERO (BANNER PRINCIPAL) --- */
+.hero {
+    background-color: var(--bg-white);
+    padding: 3.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-tag {
+    display: inline-block;
+    background-color: #fff3d1;
+    color: #996f00;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 1.8rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    object-fit: cover;
+    width: 100%;
+    max-height: 380px;
+}
+
+/* --- 5. BOTÕES E BADGES --- */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    border-radius: var(--radius);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: var(--bg-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-blue-hover);
+}
+
+.btn-outline {
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.btn-outline:hover {
+    background-color: #f0f5ff;
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.badge-yellow {
+    background-color: #fff8dc;
+    color: #996f00;
+    border: 1px solid var(--accent-yellow);
+}
+
+.badge-blue {
+    background-color: #e6f0ff;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+}
+
+.badge-red {
+    background-color: #ffe6ea;
+    color: var(--accent-red);
+    border: 1px solid var(--accent-red);
+}
+
+/* --- 6. SEÇÃO DE CATEGORIAS --- */
+.categories {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    color: var(--text-dark);
+}
+
+.section-title p {
+    color: var(--text-muted);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.category-card {
+    background-color: var(--bg-white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-top: 4px solid transparent;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.category-cinema {
+    border-top-color: var(--accent-yellow);
+}
+
+.category-musica {
+    border-top-color: var(--primary-blue);
+}
+
+.category-teatro {
+    border-top-color: var(--accent-red);
+}
+
+.category-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.category-content {
+    padding: 1.5rem;
+}
+
+.category-content h3 {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.category-content p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+}
+
+.btn-link {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* --- 7. EVENTOS EM DESTAQUE --- */
+.featured {
+    background-color: var(--bg-white);
+    padding: 4rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.event-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background-color: var(--bg-white);
+    transition: box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.event-img {
+    position: relative;
+}
+
+.event-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.event-info {
+    padding: 1.2rem;
+}
+
+.event-date {
+    font-size: 0.85rem;
+    color: var(--primary-blue);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.event-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+}
+
+.event-location {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.8rem;
+}
+
+.event-price {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* --- 8. RODAPÉ (FOOTER) --- */
+.footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding-top: 3.5rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.footer-logo .logo-viva {
+    color: #ffffff;
+}
+
+.footer-about p {
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
+.senai-credit {
+    font-size: 0.85rem;
+    color: var(--accent-yellow);
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-links ul,
+.footer-contact ul {
+    list-style: none;
+}
+
+.footer-links li,
+.footer-contact li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #94a3b8;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    background-color: #020617;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 0.85rem;
+    border-top: 1px solid #1e293b;
+}
+
+/* --- 9. RESPONSIVIDADE (MEDIA QUERIES) --- */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .category-grid,
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .category-grid,
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
