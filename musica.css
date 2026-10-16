@@ -1,0 +1,20 @@
+/* =========================================
+   MÚSICA - ESTILOS (musica.css)
+   ========================================= */
+/* Logo fica Azul para Música */
+.logo-cena { color: var(--primary-blue) !important; }
+.logo-dot { color: var(--accent-yellow) !important; }
+
+.page-hero {
+    height: 50vh; background: url('https://images.unsplash.com/photo-1533174000273-e18e8aa8b260?auto=format&fit=crop&w=1920&q=80') center/cover;
+    position: relative; display: flex; align-items: center; color: white;
+}
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.9), transparent); }
+.hero-info { position: relative; z-index: 2; max-width: 600px; }
+.hero-info h1 { font-size: 3rem; margin-bottom: 1rem; }
+
+.page-content { padding: 4rem 0; }
+.grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.card { background: var(--bg-white); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card-body { padding: 1.5rem; }
